@@ -1,0 +1,17 @@
+---
+const { someProps } = Astro.props;
+import Header from "../components/Header.astro";
+---
+
+<html>
+  <body>
+    <Header>
+      <slot />
+      <style>
+        body {
+          min-height: 100vh;
+        }
+      </style>
+    </Header>
+  </body>
+</html>
